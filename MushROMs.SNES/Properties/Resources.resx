@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorPaletteFileFormatUnknown" xml:space="preserve">
+    <value>The palette file format is unknown or not supported.</value>
+  </data>
+  <data name="ErrorPaletteDataTooSmall" xml:space="preserve">
+    <value>Size of data is not large enough to support specified number of colors.</value>
+  </data>
+  <data name="ErrorInvalidFileDataSize" xml:space="preserve">
+    <value>Size of data is not a valid size for the specified format.</value>
+  </data>
+  <data name="ErrorNumPaletteTiles" xml:space="preserve">
+    <value>Number of colors is less than or equal to zero.</value>
+  </data>
+  <data name="ErrorS9XFormat" xml:space="preserve">
+    <value>SNES9x save state is an unknown format.</value>
+  </data>
+  <data name="ErrorS9XVersion" xml:space="preserve">
+    <value>Unknown SNES9x version.</value>
+  </data>
+  <data name="ErrorSaveStateSize" xml:space="preserve">
+    <value>Cannot get size for save state files.</value>
+  </data>
+  <data name="ErrorScan0Null" xml:space="preserve">
+    <value>The pixel data pointer is null.</value>
+  </data>
+  <data name="ErrorSNESFile" xml:space="preserve">
+    <value>Cannot save data as an SNES ROM if it was not originally a ROM. There is no referenced ROM data to include.</value>
+  </data>
+  <data name="ErrorTPLFormat" xml:space="preserve">
+    <value>The file does not have the proper header for a SNES Tile Layer Pro Palette file.</value>
+  </data>
+  <data name="FilterOptionsAll" xml:space="preserve">
+    <value>All valid Palette files</value>
+  </data>
+  <data name="FilterOptionsBIN" xml:space="preserve">
+    <value>Binary files</value>
+  </data>
+  <data name="FilterOptionsDMP" xml:space="preserve">
+    <value>SNES9x Debugger palette dump</value>
+  </data>
+  <data name="FilterOptionsMW3" xml:space="preserve">
+    <value>Lunar Magic Palette files</value>
+  </data>
+  <data name="FilterOptionsPAL" xml:space="preserve">
+    <value>PAL Palette files</value>
+  </data>
+  <data name="FilterOptionsS9X" xml:space="preserve">
+    <value>SNES9x v1.53/1.51 save state files</value>
+  </data>
+  <data name="FilterOptionsSNS" xml:space="preserve">
+    <value>Super NES ROM files</value>
+  </data>
+  <data name="FilterOptionsTPL" xml:space="preserve">
+    <value>Tile Layer Pro files</value>
+  </data>
+  <data name="FilterOptionsZST" xml:space="preserve">
+    <value>ZSNES v1.51 save state files</value>
+  </data>
+  <data name="ErrorAddressOutOfRange" xml:space="preserve">
+    <value>The address was outside the range of the data.</value>
+  </data>
+  <data name="ErrorPaleteNotInitialized" xml:space="preserve">
+    <value>The palette data has not been initialized.</value>
+  </data>
+  <data name="ErrorSaveStateFile" xml:space="preserve">
+    <value>Cannot save data as a save state if it was not originally a save state. There is no referenced save state data to include.</value>
+  </data>
+  <data name="ErrorSelectionsMismatch" xml:space="preserve">
+    <value>The two selections do not match in size.</value>
+  </data>
+  <data name="ErrorEditorDataNull" xml:space="preserve">
+    <value>The editor data is null.</value>
+  </data>
+  <data name="ErrorFileData" xml:space="preserve">
+    <value>The file data is null.</value>
+  </data>
+  <data name="ErrorGradientStyle" xml:space="preserve">
+    <value>This is not a valid gradient style value.</value>
+  </data>
+  <data name="ErrorPixelDataSizeMismatch" xml:space="preserve">
+    <value>The pixel array size does not match the size of the drawing data.</value>
+  </data>
+  <data name="ErrorGFXFileFormatUnknown" xml:space="preserve">
+    <value>The graphics file formats is unknown or not supported.</value>
+  </data>
+  <data name="ErrorNumGFXTiles" xml:space="preserve">
+    <value>Number of GFX tiles is less than or equal to zero.</value>
+  </data>
+  <data name="ErrorGFXNotInitialized" xml:space="preserve">
+    <value>The graphics data has not been initialized.</value>
+  </data>
+  <data name="FilterOptionsCHR" xml:space="preserve">
+    <value>YY-CHR raw graphics files</value>
+  </data>
+  <data name="ErrorArrangeFormat" xml:space="preserve">
+    <value>Not a valid tile arrange format.</value>
+  </data>
+</root>

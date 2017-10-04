@@ -1,0 +1,2 @@
+﻿Mouse wheel scrolling
+Change zero index when resizing to not screw up scrolling.

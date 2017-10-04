@@ -1,0 +1,23 @@
+﻿Set address boundaries for SNES viewer
+Add 'About' form
+Add comments in code so people know what's going on
+Improve keyboard functionality
+Make sure all status implementation works
+Comments and ComponentModel implementation
+Make sure all resources are future proof for new languages (Bug Ersanio)
+*Add context menu
+*GoTo form for SNES viewer
+*Determine which functions should be virtual (remember SNES layer editor)
+*Look into file loading and saving and handle IOExceptions
+*Test drag and drop
+*Implement "Save All"
+*Show address as status in SNES viewer
+*Remove '*' when saved
+*Implement 'Reset Settings' option in 'Customize Settings' dialog
+*Prompt to save when closing
+[?]Enumerate SNES9x save state values
+[?]Load .mwl palettes
+[?]Improve save method with save states
+[?]Add more save state options (older emulators, bsnes/higan)
+[?]Derive ColorizeForm from RGBForm
+[?]Add 'Help' webpage

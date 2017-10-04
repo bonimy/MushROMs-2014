@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77B11C41-38AF-44C7-8830-4F4809CD3D26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MushROMs.SNESEditor</RootNamespace>
+    <AssemblyName>MushROMs.GenericEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GFXEditor\GFXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXForm.Designer.cs">
+      <DependentUpon>GFXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\GFXMdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXMdiForm.Designer.cs">
+      <DependentUpon>GFXMdiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\GFXMenuComponents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXMenuStrip.Designer.cs">
+      <DependentUpon>GFXMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\GFXStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXStatus.Designer.cs">
+      <DependentUpon>GFXStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\GFXTileStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXTileStatus.Designer.cs">
+      <DependentUpon>GFXTileStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\GFXToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXToolStrip.Designer.cs">
+      <DependentUpon>GFXToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\GFXContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\GFXContextMenuStrip.Designer.cs">
+      <DependentUpon>GFXContextMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\PaletteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\PaletteView.Designer.cs">
+      <DependentUpon>PaletteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GFXEditor\TileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GFXEditor\TileForm.Designer.cs">
+      <DependentUpon>TileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoToForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoToForm.Designer.cs">
+      <DependentUpon>GoToForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteContextMenuStrip.Designer.cs">
+      <DependentUpon>PaletteContextMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteForm.Designer.cs">
+      <DependentUpon>PaletteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteMdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteMdiForm.Designer.cs">
+      <DependentUpon>PaletteMdiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteMenuComponents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteMenuStrip.Designer.cs">
+      <DependentUpon>PaletteMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaletteEditor\PaletteToolStrip.Designer.cs">
+      <DependentUpon>PaletteToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GFXEditor\GFXForm.resx">
+      <DependentUpon>GFXForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\GFXMdiForm.resx">
+      <DependentUpon>GFXMdiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\GFXMenuStrip.resx">
+      <DependentUpon>GFXMenuStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\GFXStatus.resx">
+      <DependentUpon>GFXStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\GFXTileStatus.resx">
+      <DependentUpon>GFXTileStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\GFXToolStrip.resx">
+      <DependentUpon>GFXToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\GFXContextMenuStrip.resx">
+      <DependentUpon>GFXContextMenuStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\PaletteView.resx">
+      <DependentUpon>PaletteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFXEditor\TileForm.resx">
+      <DependentUpon>TileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoToForm.resx">
+      <DependentUpon>GoToForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteEditor\PaletteContextMenuStrip.resx">
+      <DependentUpon>PaletteContextMenuStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteEditor\PaletteForm.resx">
+      <DependentUpon>PaletteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteEditor\PaletteMdiForm.es.resx">
+      <DependentUpon>PaletteMdiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteEditor\PaletteMdiForm.resx">
+      <DependentUpon>PaletteMdiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteEditor\PaletteMenuStrip.resx">
+      <DependentUpon>PaletteMenuStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteEditor\PaletteToolStrip.resx">
+      <DependentUpon>PaletteToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MushROMs.Controls\MushROMs.Controls.csproj">
+      <Project>{915FC9D0-72DD-4137-B281-638F7AF8CF21}</Project>
+      <Name>MushROMs.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MushROMs.Editors\MushROMs.Editors.csproj">
+      <Project>{3A43AE24-3671-4BAD-B3F8-A2DAD4F1713A}</Project>
+      <Name>MushROMs.Editorsbak</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MushROMs.LunarCompress\MushROMs.LunarCompress.csproj">
+      <Project>{BCDE65F1-011C-4BFC-A58A-DED09AAC5FB8}</Project>
+      <Name>MushROMs.LunarCompress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MushROMs.SNESControls\MushROMs.SNESControls.csproj">
+      <Project>{94FAD524-071E-4E52-A08C-69FE71222C47}</Project>
+      <Name>MushROMs.SNESControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MushROMs.SNES\MushROMs.SNES.csproj">
+      <Project>{8AD66EF7-62E3-4B74-AB66-8FA66779648E}</Project>
+      <Name>MushROMs.SNES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MushROMs.Unmanaged\MushROMs.Unmanaged.csproj">
+      <Project>{445ED3A8-04FC-4E64-B94B-4074EB60F185}</Project>
+      <Name>MushROMs.Unmanaged</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\DefaultPalette.pal" />
+    <None Include="Resources\saveAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MapEditor\" />
+    <Folder Include="TileEditor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PaletteEditor\Resources\mnuBlend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PaletteEditor\Resources\mnuColorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PaletteEditor\Resources\mnuGrayscale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PaletteEditor\Resources\mnuHorizontalGradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PaletteEditor\Resources\mnuInvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PaletteEditor\Resources\mnuVerticalGradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAllHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_UndoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CutHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_RedoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CascadeWindowsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GFXEditor\Resources\FlipSelectionHorizontal.png" />
+    <Content Include="GFXEditor\Resources\FlipSelectionVertical.png" />
+    <Content Include="GFXEditor\Resources\FlipTilesHorizontal.png" />
+    <Content Include="GFXEditor\Resources\FlipTilesVertical.png" />
+    <Content Include="GFXEditor\Resources\RotateSelection180.png" />
+    <Content Include="GFXEditor\Resources\RotateSelectionLeft90.png" />
+    <Content Include="GFXEditor\Resources\RotateSelectionRight90.png" />
+    <Content Include="GFXEditor\Resources\RotateTiles180.png" />
+    <Content Include="GFXEditor\Resources\RotateTilesLeft90.png" />
+    <Content Include="GFXEditor\Resources\RotateTilesRight90.png" />
+    <Content Include="PaletteEditor\__ToDo.txt" />
+    <None Include="Resources\mspaint_60405.bmp" />
+    <None Include="Resources\mspaint_60401.bmp" />
+    <None Include="Resources\mspaint_60397.bmp" />
+    <None Include="Resources\mspaint_60393.bmp" />
+    <None Include="Resources\mspaint_60389.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT EXIST "Libraries\" (
+MD "Libraries\"
+)
+IF NOT EXIST "Libraries\$(Platform)\" (
+MD "Libraries\$(Platform)\"
+)
+IF NOT EXIST "Libraries\$(Platform)\Unmanaged.dll" (
+COPY "$(SolutionDir)$(Configuration)\$(Platform)\Unmanaged.dll" "Libraries\$(Platform)\Unmanaged.dll"
+)
+IF NOT EXIST "Libraries\$(Platform)\Lunar Compress.dll" (
+COPY "$(SolutionDir)MushROMs.LunarCompress\Lunar Compress\$(Platform)\Lunar Compress.dll" "Libraries\$(Platform)\Lunar Compress.dll"
+)
+
+IF NOT EXIST "$(DevEnvDir)Libraries\" (
+MD "$(DevEnvDir)Libraries\"
+)
+IF NOT EXIST "$(DevEnvDir)Libraries\$(Platform)\" (
+MD "$(DevEnvDir)Libraries\$(Platform)\"
+)
+IF NOT EXIST "$(DevEnvDir)Libraries\$(Platform)\Unmanaged.dll" (
+COPY "$(SolutionDir)$(Configuration)\$(Platform)\Unmanaged.dll" "$(DevEnvDir)Libraries\$(Platform)\Unmanaged.dll"
+)
+IF NOT EXIST "$(DevEnvDir)Libraries\$(Platform)\Lunar Compress.dll" (
+COPY "$(SolutionDir)MushROMs.LunarCompress\Lunar Compress\$(Platform)\Lunar Compress.dll" "$(DevEnvDir)Libraries\$(Platform)\Lunar Compress.dll"
+)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

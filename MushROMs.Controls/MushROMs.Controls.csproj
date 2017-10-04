@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{915FC9D0-72DD-4137-B281-638F7AF8CF21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MushROMs.Controls</RootNamespace>
+    <AssemblyName>MushROMs.Controls</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;x64</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;x64</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <DocumentationFile>bin\x64\Release\MushROMs.Controls.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;x86</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+    <DocumentationFile>bin\x86\Release\MushROMs.Controls.XML</DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractControlDescriptionProvider.cs" />
+    <Compile Include="ComplimentEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorValueControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawControl.Keys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawControl.Mouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorControl.Keys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorControl.Mouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorControl.Selection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorFormEventArgs.cs" />
+    <Compile Include="EditorHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorMdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IEditorControl.cs" />
+    <Compile Include="IIntegerComponent.cs" />
+    <Compile Include="IntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MdiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuComponents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LinkedTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UnsavedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnsavedForm.Designer.cs">
+      <DependentUpon>UnsavedForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MushROMs.Editors\MushROMs.Editors.csproj">
+      <Project>{3A43AE24-3671-4BAD-B3F8-A2DAD4F1713A}</Project>
+      <Name>MushROMs.Editorsbak</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MushROMs.Unmanaged\MushROMs.Unmanaged.csproj">
+      <Project>{445ED3A8-04FC-4E64-B94B-4074EB60F185}</Project>
+      <Name>MushROMs.Unmanaged</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Office and VS\ActualSizeHS.png" />
+    <Content Include="Resources\Office and VS\AddTableHS.png" />
+    <Content Include="Resources\Office and VS\AddToFavoritesHS.png" />
+    <Content Include="Resources\Office and VS\Alerts.png" />
+    <Content Include="Resources\Office and VS\AlignObjectsBottomHS.png" />
+    <Content Include="Resources\Office and VS\AlignObjectsCenteredHorizontalHS.png" />
+    <Content Include="Resources\Office and VS\AlignObjectsCenteredVerticalHS.png" />
+    <Content Include="Resources\Office and VS\AlignObjectsLeftHS.png" />
+    <Content Include="Resources\Office and VS\AlignObjectsRightHS.png" />
+    <Content Include="Resources\Office and VS\AlignObjectsTopHS.png" />
+    <Content Include="Resources\Office and VS\AlignTableCellMiddleCenterHS.png" />
+    <Content Include="Resources\Office and VS\AlignTableCellMiddleLeftJustHS.PNG" />
+    <Content Include="Resources\Office and VS\AlignTableCellMiddleRightHS.png" />
+    <Content Include="Resources\Office and VS\AlignToGridHS.png" />
+    <Content Include="Resources\Office and VS\Animate.png" />
+    <Content Include="Resources\Office and VS\ApproveReject_16x16.png" />
+    <Content Include="Resources\Office and VS\ApproveReject_32x32.png" />
+    <Content Include="Resources\Office and VS\AppWindow.png" />
+    <Content Include="Resources\Office and VS\ArrangeSideBySideHS.png" />
+    <Content Include="Resources\Office and VS\ArrangeWindowsHS.png" />
+    <Content Include="Resources\Office and VS\AttachFileHS.png" />
+    <Content Include="Resources\Office and VS\AttachmentHS.png" />
+    <Content Include="Resources\Office and VS\AudioHS.png" />
+    <Content Include="Resources\Office and VS\Back.png" />
+    <Content Include="Resources\Office and VS\BackgroundSoundHS.png" />
+    <Content Include="Resources\Office and VS\BarCodeHS.png" />
+    <Content Include="Resources\Office and VS\BehindTextHS.png" />
+    <Content Include="Resources\Office and VS\boldhs.png" />
+    <Content Include="Resources\Office and VS\book_addressHS.png" />
+    <Content Include="Resources\Office and VS\Book_angleHS.png" />
+    <Content Include="Resources\Office and VS\Book_openHS.png" />
+    <Content Include="Resources\Office and VS\book_reportHS.png" />
+    <Content Include="Resources\Office and VS\Book_StackOfReportsHS.png" />
+    <Content Include="Resources\Office and VS\BreakpointHS.png" />
+    <Content Include="Resources\Office and VS\BringForwardHS.png" />
+    <Content Include="Resources\Office and VS\BringToFrontHS.png" />
+    <Content Include="Resources\Office and VS\CalculatorHS.png" />
+    <Content Include="Resources\Office and VS\Calendar_scheduleHS.png" />
+    <Content Include="Resources\Office and VS\CancelApproval_32x32.png" />
+    <Content Include="Resources\Office and VS\CanvasScaleHS.png" />
+    <Content Include="Resources\Office and VS\CascadeWindowsHS.png" />
+    <Content Include="Resources\Office and VS\CenterAcrossHS.png" />
+    <Content Include="Resources\Office and VS\CheckBoxHS.png" />
+    <Content Include="Resources\Office and VS\CheckGrammarHS.png" />
+    <Content Include="Resources\Office and VS\CheckSpellingHS.png" />
+    <Content Include="Resources\Office and VS\ChooseColor.png" />
+    <Content Include="Resources\Office and VS\ColorHS.png" />
+    <Content Include="Resources\Office and VS\Color_background_32x32.png" />
+    <Content Include="Resources\Office and VS\Color_eyedropper.png" />
+    <Content Include="Resources\Office and VS\Color_fontHS.png" />
+    <Content Include="Resources\Office and VS\Color_linecolor.png" />
+    <Content Include="Resources\Office and VS\CommentHS.png" />
+    <Content Include="Resources\Office and VS\compareversionsHS.png" />
+    <Content Include="Resources\Office and VS\ConflictHS.png" />
+    <Content Include="Resources\Office and VS\CopyFolderHS.png" />
+    <Content Include="Resources\Office and VS\CopyHS.png" />
+    <Content Include="Resources\Office and VS\CutHS.png" />
+    <Content Include="Resources\Office and VS\DataContainer_MoveFirstHS.png" />
+    <Content Include="Resources\Office and VS\DataContainer_MoveLastHS.png" />
+    <Content Include="Resources\Office and VS\DataContainer_MoveNextHS.png" />
+    <Content Include="Resources\Office and VS\DataContainer_MovePreviousHS.png" />
+    <Content Include="Resources\Office and VS\DataContainer_NewRecordHS.png" />
+    <Content Include="Resources\Office and VS\Delete-PermissionHH.png" />
+    <Content Include="Resources\Office and VS\DeleteFolderHS.png" />
+    <Content Include="Resources\Office and VS\DeleteHS.png" />
+    <Content Include="Resources\Office and VS\Delete_black_32x32.png" />
+    <Content Include="Resources\Office and VS\DialHS.png" />
+    <Content Include="Resources\Office and VS\DiscardChanges.png" />
+    <Content Include="Resources\Office and VS\DisplayInColorHS.png" />
+    <Content Include="Resources\Office and VS\DocumentHS.png" />
+    <Content Include="Resources\Office and VS\DoubleLeftArrowHS.png" />
+    <Content Include="Resources\Office and VS\DoubleRightArrowHS.png" />
+    <Content Include="Resources\Office and VS\Edit-Permission.png" />
+    <Content Include="Resources\Office and VS\EditBrightContrastHS.png" />
+    <Content Include="Resources\Office and VS\EditCodeHS.png" />
+    <Content Include="Resources\Office and VS\EditDocument.png" />
+    <Content Include="Resources\Office and VS\EditHTMLSource.png" />
+    <Content Include="Resources\Office and VS\EditInformationHS.png" />
+    <Content Include="Resources\Office and VS\EditTableHS.png" />
+    <Content Include="Resources\Office and VS\EditTask.png" />
+    <Content Include="Resources\Office and VS\EditTask_32x32.png" />
+    <Content Include="Resources\Office and VS\Edit_RedoHS.png" />
+    <Content Include="Resources\Office and VS\Edit_UndoHS.png" />
+    <Content Include="Resources\Office and VS\EnvelopeHS.png" />
+    <Content Include="Resources\Office and VS\eps_closedHS.png" />
+    <Content Include="Resources\Office and VS\eps_openHS.png" />
+    <Content Include="Resources\Office and VS\eps_open_largeHS.png" />
+    <Content Include="Resources\Office and VS\Erase.png" />
+    <Content Include="Resources\Office and VS\ExpandSpaceHS.png" />
+    <Content Include="Resources\Office and VS\ExpirationHS.png" />
+    <Content Include="Resources\Office and VS\FaxHS.png" />
+    <Content Include="Resources\Office and VS\FilesDownload_32x32.png" />
+    <Content Include="Resources\Office and VS\FillDownHS.png" />
+    <Content Include="Resources\Office and VS\FillLeftHS.png" />
+    <Content Include="Resources\Office and VS\FillRightHS.png" />
+    <Content Include="Resources\Office and VS\FillUpHS.png" />
+    <Content Include="Resources\Office and VS\Filter.png" />
+    <Content Include="Resources\Office and VS\Filter2HS.png" />
+    <Content Include="Resources\Office and VS\FindHS.png" />
+    <Content Include="Resources\Office and VS\FindNextHS.png" />
+    <Content Include="Resources\Office and VS\FindNext_VS.png" />
+    <Content Include="Resources\Office and VS\FindPrevious_VS.png" />
+    <Content Include="Resources\Office and VS\Find_VS.png" />
+    <Content Include="Resources\Office and VS\Flag_blueHS.png" />
+    <Content Include="Resources\Office and VS\Flag_greenHS.png" />
+    <Content Include="Resources\Office and VS\Flag_redHS.png" />
+    <Content Include="Resources\Office and VS\FlipHorizontalHS.png" />
+    <Content Include="Resources\Office and VS\FlipVerticalHS.png" />
+    <Content Include="Resources\Office and VS\FontDialogHS.png" />
+    <Content Include="Resources\Office and VS\FontHS.png" />
+    <Content Include="Resources\Office and VS\Forecolor.png" />
+    <Content Include="Resources\Office and VS\FormRunHS.png" />
+    <Content Include="Resources\Office and VS\FormulaEvaluatorHS.png" />
+    <Content Include="Resources\Office and VS\forward.png" />
+    <Content Include="Resources\Office and VS\FullScreenHS.png" />
+    <Content Include="Resources\Office and VS\FunctionHS.png" />
+    <Content Include="Resources\Office and VS\GetLatestVersion.png" />
+    <Content Include="Resources\Office and VS\GoLtrHS.png" />
+    <Content Include="Resources\Office and VS\GoRtlHS.png" />
+    <Content Include="Resources\Office and VS\GoToNextHS.png" />
+    <Content Include="Resources\Office and VS\GoToNextRecord.png" />
+    <Content Include="Resources\Office and VS\GoToParentFolderHS.png" />
+    <Content Include="Resources\Office and VS\GoToPrevious.png" />
+    <Content Include="Resources\Office and VS\GoToPreviousMessage.png" />
+    <Content Include="Resources\Office and VS\GoToPreviousRecord.png" />
+    <Content Include="Resources\Office and VS\GotoShortcutsHS.png" />
+    <Content Include="Resources\Office and VS\graphhs.png" />
+    <Content Include="Resources\Office and VS\Help.png" />
+    <Content Include="Resources\Office and VS\HighlightHS.png" />
+    <Content Include="Resources\Office and VS\History.png" />
+    <Content Include="Resources\Office and VS\HomeHS.png" />
+    <Content Include="Resources\Office and VS\HtmlBalanceBracesHS.png" />
+    <Content Include="Resources\Office and VS\HTMLPage.png" />
+    <Content Include="Resources\Office and VS\HTMLPasswordHS.png" />
+    <Content Include="Resources\Office and VS\HTMLSubmitHS.png" />
+    <Content Include="Resources\Office and VS\IgnoreIssue_32x32.png" />
+    <Content Include="Resources\Office and VS\ImportXMLHS.png" />
+    <Content Include="Resources\Office and VS\IndentHS.png" />
+    <Content Include="Resources\Office and VS\InsertHyperlinkHS.png" />
+    <Content Include="Resources\Office and VS\InsertPicture.png" />
+    <Content Include="Resources\Office and VS\InsertPictureHS.png" />
+    <Content Include="Resources\Office and VS\InsertTabControlHS.png" />
+    <Content Include="Resources\Office and VS\ItalicHS.png" />
+    <Content Include="Resources\Office and VS\LayoutSelectColumn.png" />
+    <Content Include="Resources\Office and VS\LayoutSelectRow.png" />
+    <Content Include="Resources\Office and VS\LegendHS.png" />
+    <Content Include="Resources\Office and VS\LineColorHS.png" />
+    <Content Include="Resources\Office and VS\Link.png" />
+    <Content Include="Resources\Office and VS\List_BulletsHS.png" />
+    <Content Include="Resources\Office and VS\List_NumberedHS.png" />
+    <Content Include="Resources\Office and VS\List_NumberedRTLHS.png" />
+    <Content Include="Resources\Office and VS\List_NumberedTBHS.png" />
+    <Content Include="Resources\Office and VS\List_NumberedVertTHS.png" />
+    <Content Include="Resources\Office and VS\Microphone.png" />
+    <Content Include="Resources\Office and VS\MonthlyViewHS.png" />
+    <Content Include="Resources\Office and VS\MoveFolderHS.png" />
+    <Content Include="Resources\Office and VS\MoveToFolderHS.png" />
+    <Content Include="Resources\Office and VS\MultiplePagesHS.png" />
+    <Content Include="Resources\Office and VS\NavBack.png" />
+    <Content Include="Resources\Office and VS\NavForward.png" />
+    <Content Include="Resources\Office and VS\NewCardHS.png" />
+    <Content Include="Resources\Office and VS\NewDocumentHS.png" />
+    <Content Include="Resources\Office and VS\NewFolderHS.png" />
+    <Content Include="Resources\Office and VS\NewMessageHS.png" />
+    <Content Include="Resources\Office and VS\NewReportHS.png" />
+    <Content Include="Resources\Office and VS\NewWebsite.png" />
+    <Content Include="Resources\Office and VS\NewWindow.png" />
+    <Content Include="Resources\Office and VS\NextPageHS.png" />
+    <Content Include="Resources\Office and VS\NoteHS.png" />
+    <Content Include="Resources\Office and VS\Notify_32x32.png" />
+    <Content Include="Resources\Office and VS\OpenFile.png" />
+    <Content Include="Resources\Office and VS\openfolderHS.png" />
+    <Content Include="Resources\Office and VS\openHS.png" />
+    <Content Include="Resources\Office and VS\OpenInBrowser.png" />
+    <Content Include="Resources\Office and VS\OpenSelectedItemHS.png" />
+    <Content Include="Resources\Office and VS\OptionsHS.png" />
+    <Content Include="Resources\Office and VS\OrganizerHS.png" />
+    <Content Include="Resources\Office and VS\OrgChartHS.png" />
+    <Content Include="Resources\Office and VS\OutdentHS.png" />
+    <Content Include="Resources\Office and VS\PageNumber.png" />
+    <Content Include="Resources\Office and VS\PageUpHS.png" />
+    <Content Include="Resources\Office and VS\PageWidthHS.png" />
+    <Content Include="Resources\Office and VS\PasteHS.png" />
+    <Content Include="Resources\Office and VS\PauseHS.png" />
+    <Content Include="Resources\Office and VS\PauseRecorderHS.png" />
+    <Content Include="Resources\Office and VS\PieChart3DHS.png" />
+    <Content Include="Resources\Office and VS\PieChartHS.png" />
+    <Content Include="Resources\Office and VS\PlayHS.png" />
+    <Content Include="Resources\Office and VS\PointerHS.png" />
+    <Content Include="Resources\Office and VS\PortraitHS.png" />
+    <Content Include="Resources\Office and VS\PortraitLandscapeHS.png" />
+    <Content Include="Resources\Office and VS\PreviousPageHS.png" />
+    <Content Include="Resources\Office and VS\PrimaryKeyHS.png" />
+    <Content Include="Resources\Office and VS\PrintArea.png" />
+    <Content Include="Resources\Office and VS\PrintHS.png" />
+    <Content Include="Resources\Office and VS\PrintPreviewHS.png" />
+    <Content Include="Resources\Office and VS\PrintSetupHS.png" />
+    <Content Include="Resources\Office and VS\Properties.png" />
+    <Content Include="Resources\Office and VS\ProtectFormHS.png" />
+    <Content Include="Resources\Office and VS\ProtectSubdocumentHS.png" />
+    <Content Include="Resources\Office and VS\PublishMajorVersion.png" />
+    <Content Include="Resources\Office and VS\PublishPlanHS.png" />
+    <Content Include="Resources\Office and VS\PublishToWebHS.png" />
+    <Content Include="Resources\Office and VS\PushpinHS.png" />
+    <Content Include="Resources\Office and VS\RadialChartHS.png" />
+    <Content Include="Resources\Office and VS\RecolorPictureHS.png" />
+    <Content Include="Resources\Office and VS\RecordHS.png" />
+    <Content Include="Resources\Office and VS\ReduceSize.png" />
+    <Content Include="Resources\Office and VS\RefreshDocViewHS.png" />
+    <Content Include="Resources\Office and VS\RelationshipsHS.png" />
+    <Content Include="Resources\Office and VS\Removehyperlink.png" />
+    <Content Include="Resources\Office and VS\RenameFolderHS.png" />
+    <Content Include="Resources\Office and VS\RepeatHS.png" />
+    <Content Include="Resources\Office and VS\ResizeHS.png" />
+    <Content Include="Resources\Office and VS\RestartHS.png" />
+    <Content Include="Resources\Office and VS\RightArrow2HS.png" />
+    <Content Include="Resources\Office and VS\RightArrowHS.png" />
+    <Content Include="Resources\Office and VS\RightsRestrictedHS.png" />
+    <Content Include="Resources\Office and VS\RightToLeftDoucmentHS.png" />
+    <Content Include="Resources\Office and VS\RoutingSlipHS.png" />
+    <Content Include="Resources\Office and VS\RulerHS.png" />
+    <Content Include="Resources\Office and VS\SaveAllHS.png" />
+    <Content Include="Resources\Office and VS\SaveAsWebPageHS.png" />
+    <Content Include="Resources\Office and VS\SaveFormDesignHS.png" />
+    <Content Include="Resources\Office and VS\saveHS.png" />
+    <Content Include="Resources\Office and VS\SearchFolderHS.png" />
+    <Content Include="Resources\Office and VS\SearchWebHS.png" />
+    <Content Include="Resources\Office and VS\SendBackwardHS.png" />
+    <Content Include="Resources\Office and VS\SendInstantMessage_32x32.png" />
+    <Content Include="Resources\Office and VS\SendLinkByEmail_32x32.png" />
+    <Content Include="Resources\Office and VS\SendToBackHS.png" />
+    <Content Include="Resources\Office and VS\ShowAllCommentsHS.png" />
+    <Content Include="Resources\Office and VS\ShowGridlines2HS.png" />
+    <Content Include="Resources\Office and VS\ShowGridlinesHS.png" />
+    <Content Include="Resources\Office and VS\ShowRulelinesHS.png" />
+    <Content Include="Resources\Office and VS\ShowRulerHS.png" />
+    <Content Include="Resources\Office and VS\SortHS.png" />
+    <Content Include="Resources\Office and VS\SortUpHS.png" />
+    <Content Include="Resources\Office and VS\SpeechMicHS.png" />
+    <Content Include="Resources\Office and VS\SplitSubdocumentHS.png" />
+    <Content Include="Resources\Office and VS\StopHS.png" />
+    <Content Include="Resources\Office and VS\SubmitForApproval_32x32.png" />
+    <Content Include="Resources\Office and VS\SychronizeListHS.png" />
+    <Content Include="Resources\Office and VS\SymbolHS.png" />
+    <Content Include="Resources\Office and VS\TableHS.png" />
+    <Content Include="Resources\Office and VS\TaskHS.png" />
+    <Content Include="Resources\Office and VS\TextboxHS.png" />
+    <Content Include="Resources\Office and VS\ThumbnailLoadingHS.png" />
+    <Content Include="Resources\Office and VS\ThumbnailView.png" />
+    <Content Include="Resources\Office and VS\TileWindowsHorizontallyHS.png" />
+    <Content Include="Resources\Office and VS\ViewAllPages_32x32.png" />
+    <Content Include="Resources\Office and VS\ViewThumbnailsHS.png" />
+    <Content Include="Resources\Office and VS\WarningHS.png" />
+    <Content Include="Resources\Office and VS\Web.png" />
+    <Content Include="Resources\Office and VS\WebInsertHyperlinkHS.png" />
+    <Content Include="Resources\Office and VS\WindowsHS.png" />
+    <Content Include="Resources\Office and VS\XMLFileHS.png" />
+    <Content Include="Resources\Office and VS\ZoomHS.png" />
+    <Content Include="Resources\Office and VS\Zoom_32x32.png" />
+    <Content Include="Resources\Office and VS\_MSActions_png_OfficeVS - Readme.html" />
+    <Content Include="_ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
